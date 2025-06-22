@@ -1,0 +1,62 @@
+/* Tabs (not selected) */
+.tab-pane .tab {
+    -fx-background-color: #fff8dc; /* Light yellow */
+    -fx-text-fill: #444;           /* Dark gray text */
+    -fx-font-weight: bold;
+}
+
+/* Tabs when selected */
+.tab-pane .tab:selected {
+    -fx-background-color: #ffd700; /* Golden yellow */
+    -fx-text-fill: black;
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: #ffeb3b; /* Bright lemon yellow */
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;      /* Rounded corners */
+    -fx-padding: 8 16;             /* Padding inside button */
+}
+
+/* All Labels */
+.label {
+    -fx-text-fill: #333333;        /* Dark gray text */
+    -fx-font-size: 14px;
+}
+
+/* Labels with title styleClass */
+.label.title {
+    -fx-font-size: 20px;
+    -fx-text-fill: #ffca28;        /* Orange-yellow */
+    -fx-font-weight: bold;
+}
+
+/* Find Nearest Store Button */
+.find-nearest-button {
+    -fx-background-color: #ff9a8b;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 25; /* Fully rounded */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 5);
+}
+
+.find-nearest-button:hover {
+    -fx-background-color: #ffb3a7; /* Lighter shade on hover */
+}
+
+/* Find Cheapest Store Button */
+.find-cheapest-button {
+    -fx-background-color: #f6d365;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 25; /* Fully rounded */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 5);
+}
+
+.find-cheapest-button:hover {
+    -fx-background-color: #f8e199; /* Lighter shade on hover */
+}

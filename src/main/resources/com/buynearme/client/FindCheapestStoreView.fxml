@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.buynearme.client.FindCheapestStoreController">
+    <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="false">
+        <image>
+            <Image url="@/images/cheapest-store-bg.jpg" />
+        </image>
+    </ImageView>
+    <VBox alignment="CENTER" layoutX="119.0" layoutY="83.0" prefHeight="435.0" prefWidth="562.0" spacing="20" style="-fx-padding: 20; -fx-background-color: rgba(255,255,255,0.8); -fx-background-radius: 10;" AnchorPane.bottomAnchor="82.0" AnchorPane.leftAnchor="119.0" AnchorPane.rightAnchor="119.0" AnchorPane.topAnchor="83.0">
+        <Label prefHeight="49.0" prefWidth="485.0" text="Find the store with the lowest price for a product">
+            <font>
+                <Font name="System Bold" size="21.0" />
+            </font>
+        </Label>
+        <GridPane hgap="10" vgap="10">
+            <Label text="Product Name:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <TextField fx:id="cheapestProductName" promptText="Enter product name" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+            <Button onAction="#onFindCheapestClick" style="-fx-background-color: #FF9800; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 10 20;" text="💰 Search" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <columnConstraints>
+                <ColumnConstraints />
+                <ColumnConstraints />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints />
+                <RowConstraints />
+            </rowConstraints>
+        </GridPane>
+        <TextArea fx:id="cheapestResultArea" editable="false" prefRowCount="8" style="-fx-font-family: 'Monospaced'; -fx-font-size: 12;" />
+    </VBox>
+    <HBox alignment="CENTER_LEFT" layoutX="20.0" layoutY="20.0" spacing="20">
+        <children>
+            <Button onAction="#onBackButtonClick" style="-fx-background-color: #667eea; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 8 16; -fx-background-radius: 5;" text="⬅ Back" />
+            <Label style="-fx-text-fill: white; -fx-font-weight: bold;" text="💰 Find Cheapest Store">
+                <font>
+                    <Font name="System Bold" size="24.0" />
+                </font>
+            </Label>
+        </children>
+    </HBox>
+</AnchorPane> 
