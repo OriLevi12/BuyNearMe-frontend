@@ -2,6 +2,38 @@
 
 This is the user interface for the BuyNearMe application. It is a JavaFX desktop client that communicates with the [BuyNearMe backend](https://github.com/OriLevi12/BuyNearMe) to provide users with functionality to find stores and products.
 
+## Screenshots
+
+### 🏠 Home Screen
+![Home Screen](docs/screenshots/home-screen.png)
+*Main menu with options to access Client or Admin functionality*
+
+### 👤 Client View
+![Client View](docs/screenshots/client-view.png)
+*Store listing interface with background image and navigation options*
+
+### 💰 Find Cheapest Store
+![Find Cheapest Store](docs/screenshots/find-cheapest-store.png)
+*Search interface for finding the most affordable store for specific products*
+
+### 🔍 Find Nearest Store
+![Find Nearest Store](docs/screenshots/find-nearest-store.png)
+*Location-based search to find the closest store*
+
+### 🛠 Admin Dashboard
+
+#### 🏬 Manage Stores & Products
+![Admin Stores Tab](docs/screenshots/admin-stores-tab.png)
+*Store and product management interface with tables and forms*
+
+#### 🗺 Manage Graph (Nodes)
+![Admin Nodes Tab](docs/screenshots/admin-nodes-tab.png)
+*Node management for the graph structure with coordinate inputs*
+
+#### 🛤 Manage Graph (Edges)
+![Admin Edges Tab](docs/screenshots/admin-edges-tab.png)
+*Edge management for connecting nodes in the graph structure*
+
 ## Prerequisites
 
 - Java Development Kit (JDK) 11 or higher.
@@ -54,6 +86,8 @@ The application will now start and connect to the backend.
 ```
 BuyNearMe-frontend/
 ├── .mvn/                      # Maven Wrapper configuration
+├── docs/                      # Documentation and assets
+│   └── screenshots/           # UI screenshots for README
 ├── src/
 │   ├── main/
 │   │   ├── java/com/buynearme/client/ # Java source code for the application
@@ -81,4 +115,9 @@ BuyNearMe-frontend/
 ├── mvnw & mvnw.cmd            # Maven Wrapper scripts for building and running the project
 ├── pom.xml                    # Maven project configuration (dependencies, build plugins)
 └── README.md                  # This file
-``` 
+```
+
+## 📬 Contact Info
+**Ori Levi**  
+📧 Email: Leviori1218@gmail.com  
+🐙 GitHub: [OriLevi12](https://github.com/OriLevi12) 
